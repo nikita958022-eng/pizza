@@ -1,5 +1,5 @@
 import PizzaCard from "../component/PizzaCard";
-import {pizzas} from "../DATA/Pizza";
+import {pizzas} from '../data/Pizza'
 
 function Home() {
   return (

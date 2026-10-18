@@ -1,0 +1,122 @@
+.footer {
+  background: #1c1c1c;
+  color: #ffffff;
+  padding: 25px 8% 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 25px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ===== Brand Section ===== */
+.footer-content h3 {
+  font-size: 23px;
+  color: #ff6b35;
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+
+.footer-content p {
+  color: #cccccc;
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0;
+}
+
+/* ===== Footer Columns ===== */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  color: #ff6b35;
+  margin: 0 0 5px;
+  text-transform: capitalize;
+}
+
+.footer-col a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 13px;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ff6b35;
+  transform: translateX(4px);
+}
+
+.footer-col p {
+  color: #cccccc;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ===== Copyright ===== */
+.footer-bottom {
+  grid-column: 1 / -1;
+  text-align: center;
+  border-top: 1px solid #444444;
+  padding: 12px 0;
+  margin-top: 0;
+  color: #aaaaaa;
+  font-size: 12px;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 22px 6% 0;
+  }
+
+  .footer-content {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 480px) {
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 20px 7% 0;
+  }
+
+  .footer-content {
+    grid-column: auto;
+  }
+
+  .footer-content h3 {
+    font-size: 21px;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+  }
+
+  .footer-col h4 {
+    font-size: 15px;
+  }
+
+  .footer-col a,
+  .footer-col p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+    padding: 10px 0;
+    line-height: 1.6;
+  }
+}
